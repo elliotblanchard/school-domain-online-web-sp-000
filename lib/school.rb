@@ -1,9 +1,10 @@
 class School
-  #attr_accessor :color, :size, :material, :condition
-  attr_reader :name
+  attr_accessor :roster
+  attr_reader :roster, :name
 
   def initialize(name)
     @name = name
+    roster = {}
   end
 
   def name=(name)
